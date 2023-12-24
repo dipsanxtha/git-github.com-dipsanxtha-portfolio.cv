@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dipsan | FrontEnd Web Developer</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Dipsan | Front-End">
+    <meta name="author" content="Dipsan frontend">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="profile-image img-fluid float-start rounded-circle" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/411546647_387726373704616_7613659012478457856_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_ohc=9U0KsMs20ZcAX_i77QR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQFtEzRLMgJrZ7yne0nl7Ts_AIlys_lr1qH5UT6nIihdA&oe=65AF9DC8" />
+                    <div class="profile-content">
+                        <h1 class="name">Dipsan Shrestha</h1>
+                        <h2 class="desc">Front-End Web Developer</h2>
+                        <ul class="social list-inline">
+                            
+                            <li class="list-inline-item"><a href=""><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item last-item"><a href="https://github.com/Dipsandevkots"><i
+                                        class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//profile-->
+                </div>
+                <!--//col-->
+                <div class="col-12 col-md-auto">
+                    <div class="dark-mode-switch d-flex">
+                        <div class="form-check form-switch mx-auto mx-md-0">
+                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                        </div>
+                    </div>
+                    <!--//dark-mode-switch-->
+                    <a class="btn btn-cta-primary" href="mailto:mail@DipsanShrestha.com.np target="_blank"><i
+                            class="fas fa-paper-plane"></i> Contact Me</a>
+                </div>
+                <!--//col-->
+            </div>
+            <!--//row-->
+        </div>
+        <!--//container-->
+    </header>
+    <!--//header-->
+
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>
+                                Hey there! I'm Dipsan Shrestha, and I'm on a journey to become a skilled software engineer. Right now, my focus is on frontend technologies and diving into the world of Node.js. I absolutely love the process of creating dynamic and user-friendly interfaces that bring websites and applications to life.d opportunities to grow as a developer, and I
+                                am excited to see what the future holds.
+                            </p>
+
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Personal Projects</h2>
+                        <div class="content">
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="data:image/png;base64,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"
+                                    target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="data:image/png;base64,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"
+                                        alt="openai-logo" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href=""
+                                            target="_blank">Ecommerce Application</a></h3>
+                                    <p class="mb-2">
+                                        E-commerce App: Redux, React, Tailwind CSS
+                                        
+                                        I led the development of a dynamic E-commerce app, leveraging Redux for efficient state management, React for interactivity, and Tailwind CSS for a responsive design. The result is a visually appealing and scalable application, offering users an immersive shopping experience with real-time updates and a seamless checkout process. This project demonstrates my adeptness at integrating cutting-edge technologies to deliver a modern and competitive solution.</p>
+                                    <p><a class="more-link" href="https://github.com/Dipsan Devkots/ecommerce-app"
+                                            target="_blank"><i class="fab fa-github">a</i>Frontend</a>
+                                    </p>
+                                    <p><a class="more-link" href=""
+                                        target="_blank"><i class="fab fa-github"></i>Backend</a>
+                                    </p>
+                                    <p><a class="more-link" href="https://e-commersdipsan.netlify.app/"
+                                    target="_blank"><i class="fas fa-external-link-alt"></i>Live</a>
+                                    </p>
+                                </div>
+                                <!--//desc-->
+                            </div>
+        
+                </section>
+                <!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Front End Web Developer  <span class="place"><a href="#">
+                                            Up</a></span> <span class="year"></span>
+                                </h3>
+                                <p>
+                                    My Main Roles as as project-based web developer
+                                <ul>
+                                    <li>Building Dynamic and Responsive Websites using
+                                        ReactJS.</li>
+                                    <li>Using CSS framework : boostrap , Tailwind</li>
+                                    <li>Integrating APIs to the Website</li>
+                            
+                                    <li>Working as a team with senior developers and following
+                                        the production level practices.</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <!--//item-->
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+                <section class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor in Computer
+                                    Application(BCA)</h3>
+                                <h4 class="university">Tribhuwan University<span class="year">(2021-Present)</span>
+                                </h4>
+                            </div>
+                            <!--//item-->
+                        </div>
+
+
+
+                    </div>
+                </section>
+                <!--//section-->
+            </div>
+            <!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="Dipsan-Shrestha-565917269" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://np.linkedin.com/in/Dipsan-Shrestha-565917269?trk=profile-badge"></a></div>
+              
+                    <!--//section-inner-->
+                </aside>
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span
+                                        class="sr-only">Location:</span>Kathmandu , Nepal</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="#">Email-dipsanxtha7@gmail.com
+                                    </a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
+                                        href="#">https://www.DipsanShrestha.com.np</a></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+
+
+                            <div class="skillset">
+
+
+                                <div class="item">  
+                                    <h3 class="level-title">ReactJS <span class="level-label" data-bs-toggle="tooltip"
+                                            data-bs-placement="left" title="I use this to deploy my web applications"><i
+                                                class="fas fa-info-circle"></i>Good</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">NodeJS <span class="level-label" data-bs-toggle="tooltip"
+                                            data-bs-placement="left" title="I use this to deploy my web applications"><i
+                                                class="fas fa-info-circle"></i>Begineer</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, &amp; JS<span class="level-label"
+                                            data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="I can create Responsible Site using HTML and CSS & JS."><i
+                                                class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">Java<span class="level-label" data-bs-toggle="tooltip"
+                                            data-bs-placement="left" title="Basic knowledge on Python"><i
+                                                class="fas fa-info-circle"></i>Begineer</span></h3>
+
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <p><a class="more-link" href="https://github.com/kcritesh"><i
+                                            class="fas fa-external-link-alt"></i>More on
+                                        GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!--//section-->
+
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half"></i> </span>
+                                </li>
+                                <!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Nepali:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i></span>
+                                </li>
+                                <!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i></span>
+                                </li>
+                                <!--//item-->
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+            </div>
+            <!--//secondary-->
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-->
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Developed by: <i class="fas fa-heart"></i> <a href="https://github.com/Dipsan Shrestha"
+                    target="_blank">Dipsan</a></small> <br>
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
